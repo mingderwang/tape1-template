@@ -1,5 +1,5 @@
 import test from 'tape';
-import  { generatePassword, Options }  from '../generatePassword';
+import  { generatePassword, Options }  from '../src/main';
 
 test('generatePassword', (t) => {
   // Test basic functionality

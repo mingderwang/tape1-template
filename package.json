@@ -1,21 +1,35 @@
 {
   "name": "tape1-template",
   "description": "a tape test template for typescript",
-  "version": "0.2.1",
-  "main": "index.js",
+  "version": "0.2.2",
   "author": "Ming-der Wang",
   "license": "MIT",
-  "private": true,
+  "typings": "src/options.d.ts",
+  "source": "src/main.ts",
+  "main": "dist/main.umd.js",
+  "module": "dist/main.modern.module.js",
+  "unpkg": "dist/main.umd.js",
+  "types": "dist/main.d.ts",
+  "homepage": "https://github.com/mingderwang/tape1-template.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingderwang/tape1-template.git"
+  },
   "devDependencies": {
     "@types/tape": "^4.13.2",
+    "microbundle": "^0.15.1",
     "tape": "^5.6.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "test": "tape -r ts-node/register tests/**/*.ts | npx tap-spec"
+    "test": "tape -r ts-node/register tests/**/*.ts | npx tap-spec",
+    "start": "node dist/main.js",
+    "build": "microbundle",
+    "dev": "microbundle watch --no-sourcemap"
   },
   "dependencies": {
+    "@types/node": "*",
     "simple-random": "^1.0.3"
   }
 }
