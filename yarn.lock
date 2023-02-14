@@ -542,6 +542,11 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
+simple-random@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/simple-random/-/simple-random-1.0.3.tgz#6ad160690356aeea0310d940e18a161fbe347520"
+  integrity sha512-aTiF2Muih1BNG1WD0M0nXt73T/Sm4/DOy1WpHIxWw+96RekkfahddHGK2DohaXgA5MF33A3l1Tbhg8bcM0M3uQ==
+
 stop-iteration-iterator@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stop-iteration-iterator/-/stop-iteration-iterator-1.0.0.tgz#6a60be0b4ee757d1ed5254858ec66b10c49285e4"
