@@ -1,7 +1,7 @@
 {
   "name": "tape1-template",
-  "description": "a tape test template",
-  "version": "0.2.0",
+  "description": "a tape test template for typescript",
+  "version": "0.2.1",
   "main": "index.js",
   "author": "Ming-der Wang",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "test": "tape -r ts-node/register test.ts | npx tap-spec"
+    "test": "tape -r ts-node/register tests/**/*.ts | npx tap-spec"
   },
   "dependencies": {
     "simple-random": "^1.0.3"

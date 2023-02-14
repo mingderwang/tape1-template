@@ -13,29 +13,41 @@ yarn test
 # test result
 
 ```
-✗ yarn test     
+➜  tape1-template git:(main) ✗ yarn test
 yarn run v1.22.19
-$ node test.js
-TAP version 13
-# generatePassword
-# basic
-ok 1 should have a minimum length of 8
-ok 2 should contain at least one lowercase letter
-ok 3 should contain at least one uppercase letter
-ok 4 should contain at least one digit
-# custom length
-ok 5 should have the specified length
-# custom character set
-ok 6 should only contain custom characters
-# invalid options
-ok 7 should throw an error for invalid length
-ok 8 should throw an error for empty characters
+$ tape -r ts-node/register tests/**/*.ts | npx tap-spec
 
-1..8
-# tests 8
-# pass  8
+  generatePassword
 
-# ok
 
-✨  Done in 0.44s.
+  basic
+
+    jQV2Yz!0
+    ✔ should have a minimum length of 8
+    ✔ should contain at least one lowercase letter
+    ✔ should contain at least one uppercase letter
+    ✔ should contain at least one digit
+
+  custom length
+
+    Y6bvp9BnLN!0
+    ✔ should have the specified length
+
+  custom character set
+
+    3ca3311b
+    ✔ should only contain custom characters
+
+  invalid options
+
+    ✔ should throw an error for invalid length
+    ✔ should throw an error for empty characters
+
+
+  total:     8
+  passing:   8
+  duration:  60ms
+
+
+✨  Done in 3.84s.
 ```
