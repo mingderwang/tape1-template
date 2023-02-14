@@ -1,7 +1,7 @@
 {
   "name": "tape1-template",
   "description": "a tape test template for typescript",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Ming-der Wang",
   "license": "MIT",
   "typings": "src/options.d.ts",
