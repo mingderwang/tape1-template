@@ -1,5 +1,5 @@
-const test = require('tape');
-const generatePassword = require('./generatePassword');
+import test from 'tape';
+import  { generatePassword }  from './generatePassword';
 
 test('generatePassword', (t) => {
   // Test basic functionality
