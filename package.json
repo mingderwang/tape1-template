@@ -1,0 +1,15 @@
+{
+  "name": "tape1-template",
+  "description": "a tape test template", 
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Ming-der Wang",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "tape": "^5.6.3"
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}
